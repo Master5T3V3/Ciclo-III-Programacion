@@ -39,10 +39,10 @@ int main() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //Desarrollo de las funciones
 void menu(vect n, queue<vect> cola) {
-	system("cls"); //Limpiar pantalla de consola
 	int opc; //Variable para almacenar opciones de menu
 	
 	do {
+		system("cls"); //Limpiar pantalla de consola
 		system("color 6F"); //Cambiar colores, fondo turquesa, texto blanco
 	    cout << endl << endl << endl << endl << endl; //Espacios de linea
 	    //Imprimir menu de opciones en pantalla
@@ -96,7 +96,8 @@ int tomarINT(vect n, queue<vect> cola) { //Funcion para tomar enteros
 			}
 		}
 		catch (string e) { //Capturar dato de la cadena
-			menu(n, cola); //Reiniciar menu
+			//menu(n, cola); //Reiniciar menu
+			break;
 		}
 	}
 	
